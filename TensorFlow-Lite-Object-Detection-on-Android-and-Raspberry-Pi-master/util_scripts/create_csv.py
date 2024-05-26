@@ -76,6 +76,6 @@ def main():
 
     image_path = os.path.join(os.getcwd(), 'images/valid')
     xml_df = xml_to_csv(image_path)
-    xml_df.to_csv('images/all/valid/test_labels.csv', index=None)
+    xml_df.to_csv('images/all/valid/valid.csv', index=None)
 
 main()

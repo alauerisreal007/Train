@@ -29,10 +29,10 @@ from object_detection.utils import dataset_util
 from collections import namedtuple, OrderedDict
 
 flags = tf.app.flags
-flags.DEFINE_string('csv_input', '', 'Path to the CSV input')
-flags.DEFINE_string('labelmap', '', 'Path to the labelmap file')
-flags.DEFINE_string('image_dir', '', 'Path to the image directory')
-flags.DEFINE_string('output_path', '', 'Path to output TFRecord')
+flags.DEFINE_string('csv_input', 'images/train/train_labels.csv', 'Path to the CSV input')
+flags.DEFINE_string('labelmap', 'labelmap.txt', 'Path to the labelmap file')
+flags.DEFINE_string('image_dir', 'images/', 'Path to the image directory')
+flags.DEFINE_string('output_path', 'content/', 'Path to output TFRecord')
 FLAGS = flags.FLAGS
 
 def split(df, group):
